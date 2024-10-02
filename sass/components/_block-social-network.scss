@@ -2,8 +2,12 @@
   text-align: center;
 }
 
-.social-network__item {
+.social-network__list {
   display: inline-flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 
   &:not(:last-child) {
     margin-right: 10px;
@@ -20,11 +24,10 @@
   fill: var(--social-networks-logo-color);
   background-color: var(--accent-color);
 
-  transition: background-color var(--animate-time-function), fill var(--animate-time-function);
+  transition: background-color var(--animate-time-function);
 
   &:hover,
   &:focus {
-    fill: var(--primary-white-color);
     background-color: var(--button-hover-color);
   }
 }

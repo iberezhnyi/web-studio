@@ -1135,7 +1135,7 @@ textarea {
   transition: color var(--animate-time-function);
 }
 .contacts__link--phone {
-  font-size: 24px;
+  font-size: 27px;
   line-height: 1.18;
   color: var(--accent-color);
 }
@@ -1209,12 +1209,20 @@ textarea {
   text-align: center;
 }
 
-.social-network__item {
+.social-network__list {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
 }
-.social-network__item:not(:last-child) {
+.social-network__list:not(:last-child) {
   margin-right: 10px;
 }
 
@@ -1233,11 +1241,10 @@ textarea {
   border-radius: 50%;
   fill: var(--social-networks-logo-color);
   background-color: var(--accent-color);
-  -webkit-transition: background-color var(--animate-time-function), fill var(--animate-time-function);
-  transition: background-color var(--animate-time-function), fill var(--animate-time-function);
+  -webkit-transition: background-color var(--animate-time-function);
+  transition: background-color var(--animate-time-function);
 }
 .social-network__link:hover, .social-network__link:focus {
-  fill: var(--primary-white-color);
   background-color: var(--button-hover-color);
 }
 
@@ -1705,7 +1712,15 @@ textarea {
 }
 
 .employee-card__meta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding: 30px 0 24px;
+  text-align: center;
 }
 @media screen and (min-width: 1200px) {
   .employee-card__meta {
@@ -1717,14 +1732,12 @@ textarea {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-  text-align: center;
 }
 
 .employee-card__profession {
   margin: 0 0 16px;
   font-size: 16px;
   line-height: 1.19;
-  text-align: center;
 }
 
 .client-card {
