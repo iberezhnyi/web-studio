@@ -1,5 +1,4 @@
 .social-network {
-  text-align: center;
 }
 
 .social-network__list {
@@ -14,6 +13,12 @@
   }
 }
 
+.social-network__item--mobile-menu {
+  &:not(:last-child) {
+    margin-right: 20px;
+  }
+}
+
 .social-network__link {
   @include custom-flex;
 
@@ -21,7 +26,7 @@
   height: 44px;
 
   border-radius: 50%;
-  fill: var(--social-networks-logo-color);
+  fill: var(--primary-white-color);
   background-color: var(--accent-color);
 
   transition: background-color var(--animate-time-function);

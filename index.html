@@ -40,7 +40,7 @@
               aria-expanded="true"
               aria-controls="menu-container"
             >
-              <svg class="mobile-menu-button__icon" aria-label="Переключатель мобильного меню">
+              <svg class="mobile-menu-button__icon" aria-label="Mobile Menu Toggle">
                 <use href="./images/icons/icons.svg#icon-close-menu"></use>
               </svg>
             </button>
@@ -82,28 +82,28 @@
             </ul>
 
             <ul class="list social-network mobile-menu-socials">
-              <li class="social-network__item">
+              <li class="social-network__item mobile-menu-socials__item">
                 <a href="" class="social-network__link" aria-label="Instagram">
                   <svg class="social-network__icon">
                     <use href="./images/icons/icons.svg#icon-instagram"></use>
                   </svg>
                 </a>
               </li>
-              <li class="social-network__item">
+              <li class="social-network__item mobile-menu-socials__item">
                 <a href="" class="social-network__link" aria-label="Twitter">
                   <svg class="social-network__icon">
                     <use href="./images/icons/icons.svg#icon-twitter"></use>
                   </svg>
                 </a>
               </li>
-              <li class="social-network__item">
+              <li class="social-network__item mobile-menu-socials__item">
                 <a href="" class="social-network__link" aria-label="Facebook">
                   <svg class="social-network__icon">
                     <use href="./images/icons/icons.svg#icon-facebook"></use>
                   </svg>
                 </a>
               </li>
-              <li class="social-network__item">
+              <li class="social-network__item mobile-menu-socials__item">
                 <a href="" class="social-network__link" aria-label="LinkedIn">
                   <svg class="social-network__icon">
                     <use href="./images/icons/icons.svg#icon-linkedin"></use>
@@ -617,7 +617,7 @@
       <!-- Our clients -->
       <section class="section">
         <div class="container">
-          <h2 class="section-title">Постоянные клиенты</h2>
+          <h2 class="section-title">Customers</h2>
           <ul class="list list__row">
             <li class="client-gallery">
               <a class="client-card" href="" aria-label="Ya and Co company">
@@ -672,7 +672,7 @@
           <a class="logo footer__logo" href="./index.html">
             Web<span class="footer__logo-studio">Studio</span>
           </a>
-          <address>
+          <address class="footer__address">
             <ul class="list">
               <li class="footer-contacts__list">
                 <a
@@ -680,58 +680,48 @@
                   href="https://goo.gl/maps/piqngm7oDQpEDh6u6"
                   target="_blank"
                   rel="noopener nofollow noreferrer"
-                  >г. Киев, пр-т Леси Украинки, 26</a
+                  >New York City, United States</a
                 >
               </li>
               <li class="footer-contacts__list">
-                <a class="link footer-contacts__link" href="mailto:info@example.com"
-                  >info@example.com</a
+                <a class="link footer-contacts__link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
                 >
               </li>
               <li class="footer-contacts__list">
-                <a class="link footer-contacts__link" href="tel:+380991111111">+38 099 111 11 11</a>
+                <a class="link footer-contacts__link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
               </li>
             </ul>
           </address>
         </div>
         <div class="footer__socials">
-          <b class="footer__title">присоединяйтесь</b>
-          <ul class="list social-network">
+          <b class="footer__title">Social media</b>
+          <ul class="list social-network social-network__list list__set">
             <li class="social-network__item">
-              <a
-                class="social-network__link social-network__link--style"
-                href=""
-                aria-label="Instagram"
+              <a class="social-network__link" href="" aria-label="Instagram"
                 ><svg class="social-network__icon">
                   <use href="./images/icons/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="social-network__item">
-              <a
-                class="social-network__link social-network__link--style"
-                href=""
-                aria-label="Twitter"
+              <a class="social-network__link" href="" aria-label="Twitter"
                 ><svg class="social-network__icon">
                   <use href="./images/icons/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li class="social-network__item">
-              <a
-                class="social-network__link social-network__link--style"
-                href=""
-                aria-label="Facebook"
+              <a class="social-network__link" href="" aria-label="Facebook"
                 ><svg class="social-network__icon">
                   <use href="./images/icons/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="social-network__item">
-              <a
-                class="social-network__link social-network__link--style"
-                href=""
-                aria-label="LinkedIn"
+              <a class="social-network__link" href="" aria-label="LinkedIn"
                 ><svg class="social-network__icon">
                   <use href="./images/icons/icons.svg#icon-linkedin"></use>
                 </svg>
@@ -743,14 +733,16 @@
         <!-- js-speaker-form -->
 
         <form class="subscribe">
-          <b class="footer__title">Подпишитесь на рассылку</b>
-          <input class="subscribe__input" type="email" name="mail" placeholder="E-mail" />
-          <button class="subscribe__button" type="submit">
-            <span class="subscribe__button-text">Подписаться</span>
-            <svg class="subscribe__button-icon">
-              <use href="./images/icons/icons.svg#icon-send"></use>
-            </svg>
-          </button>
+          <b class="footer__title">Subscribe</b>
+          <div class="subscribe__wrapper">
+            <input class="subscribe__input" type="email" name="mail" placeholder="E-mail" />
+            <button class="subscribe__button" type="submit">
+              <span class="subscribe__button-text">Subscribe</span>
+              <svg class="subscribe__button-icon">
+                <use href="./images/icons/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </div>
         </form>
       </div>
     </footer>
