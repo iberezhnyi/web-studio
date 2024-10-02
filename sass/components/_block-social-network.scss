@@ -1,0 +1,40 @@
+.social-network {
+    text-align: center;
+}
+
+
+.social-network__list {
+    display: inline-flex;
+
+
+    &:not(:last-child) {
+        margin-right: 10px;
+    }
+}
+
+
+.social-network__link {
+    
+    @include custom-flex;
+
+    width: 44px;
+    height: 44px;
+
+    border-radius: 50%;
+    fill: var(--social-networks-logo-color);
+
+    transition: background-color var(--animate-time-function), fill var(--animate-time-function);
+
+
+    &:hover,
+    &:focus {
+        fill: var(--primary-white-color);
+        background-color: var(--accent-color);
+    }
+}
+
+
+.social-network__icon {
+    width: 20px;
+    height: 20px;
+}

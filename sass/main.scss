@@ -1,0 +1,30 @@
+@import './utils/vars';
+@import './utils/placeholders';
+@import './utils/mixins';
+
+@import './base/normalize';
+@import './base/reset';
+@import './base/common';
+
+@import './components/block-list';
+@import './components/block-mobile-menu-button';
+@import './components/block-mobile-menu';
+@import './components/block-nav';
+@import './components/block-logo';
+@import './components/block-contact-form';
+@import './components/block-contacts';
+@import './components/block-social-network';
+@import './components/block-footer-contacts';
+@import './components/block-subscribe';
+@import './components/block-portfolio-card';
+@import './components/block-backdrop';
+@import './components/block-modal';
+
+@import './layout/section-header';
+@import './layout/section-hero';
+@import './layout/section-benefits';
+@import './layout/section-workig';
+@import './layout/section-team';
+@import './layout/section-our-clients';
+@import './layout/section-footer';
+@import './layout/section-portfolio';

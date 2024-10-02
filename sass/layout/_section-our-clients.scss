@@ -1,0 +1,28 @@
+// Block client-gallery
+.client-gallery {
+
+    @include gallery-two-mobile-three-tablet-six-screen;
+}
+
+
+//Block client-card.
+.client-card {
+
+    @include custom-flex;
+
+    height: 92px;
+
+    border: 1px solid var(--social-networks-logo-color);
+    border-radius: 4px;
+
+    fill: var(--social-networks-logo-color);
+    transition: fill var(--animate-time-function),
+                border var(--animate-time-function);
+
+
+    &:hover,
+    &:focus {
+        fill: var(--accent-color);
+        border: 1px solid var(--accent-color);
+    }
+}

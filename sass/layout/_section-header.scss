@@ -1,0 +1,40 @@
+.header {
+    border-bottom: 1px solid var(--border-header-color);
+
+
+    &__container {
+        display: flex;
+    
+    
+        @media screen and (max-width: 767px) {
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+}
+
+
+.header__logo {
+    display: inline-block;
+    padding-top: 16px;
+    padding-bottom: 16px;
+
+
+    @media screen and (min-width: 768px) {
+        margin-right: 88px;
+        padding-top: 26px;
+        padding-bottom: 26px;
+    }
+
+
+    @media screen and (min-width: 1200px) {
+        margin-right: 93px;
+        padding-top: 24px;
+        padding-bottom: 25px;
+    }
+}
+
+
+.header__logo-studio {
+    color: var(--logo-studio-text-color);
+}

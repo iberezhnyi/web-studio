@@ -1,0 +1,36 @@
+.section--working {
+    padding-top: 0;
+     
+
+    @media screen and (max-width: 1199px) {
+        display: none;
+    }
+}
+
+
+.gallery-working {
+    @include gallery-three-screen;
+}
+
+
+/* Block workflow */
+.workflow {
+    position: relative;
+}
+
+
+.workflow__thumb {
+    position: absolute;
+    bottom: 0;
+
+    width: 100%;
+    margin-bottom: 0;
+    padding: 27px 0;
+
+    line-height: 1.14;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--primary-white-color);
+
+    background-color: var(--bg-color-thumb-working-process);
+}
