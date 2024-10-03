@@ -20,13 +20,14 @@
         <a class="logo header__logo" href="./index.html">
           Web<span class="header__logo-studio">Studio</span>
         </a>
+
         <button
           class="mobile-menu-button js-open-menu"
           type="button"
           aria-expanded="false"
           aria-controls="menu-container"
         >
-          <svg class="mobile-menu-button__icon" aria-label="Переключатель мобильного меню">
+          <svg class="mobile-menu-button__icon" aria-label="Mobile menu toggler">
             <use href="./images/icons/icons.svg#icon-menu"></use>
           </svg>
         </button>
@@ -39,20 +40,21 @@
               aria-expanded="true"
               aria-controls="menu-container"
             >
-              <svg class="mobile-menu-button__icon" aria-label="Переключатель мобильного меню">
+              <svg class="mobile-menu-button__icon" aria-label="Mobile Menu Toggle">
                 <use href="./images/icons/icons.svg#icon-close-menu"></use>
               </svg>
             </button>
+
             <nav class="nav">
               <ul class="list list__set">
-                <li class="nav__item">
-                  <a class="link nav__link" href="./index.html">Студия</a>
+                <li class="nav__item nav__item--position">
+                  <a class="link nav__link" href="./index.html">Studio</a>
                 </li>
                 <li class="nav__item nav__item--position">
-                  <a class="link nav__link nav__link--current" href="./portfolio.html">Портфолио</a>
+                  <a class="link nav__link nav__link--current" href="./portfolio.html">Portfolio</a>
                 </li>
                 <li class="nav__item">
-                  <a class="link nav__link" href="">Контакты</a>
+                  <a class="link nav__link" href="">Contacts</a>
                 </li>
               </ul>
             </nav>
@@ -70,35 +72,63 @@
                 </a>
               </li>
               <li class="contacts__list contacts__list--phone">
-                <a class="link contacts__link contacts__link--phone" href="tel:+380961111111">
+                <a class="link contacts__link contacts__link--phone" href="tel:+110001111111">
                   <svg class="contacts__icon contacts__icon--phone">
                     <use href="./images/icons/icons.svg#icon-smartphone"></use>
                   </svg>
-                  +38 096 111 11 11
+                  +11 (000) 111-11-11
                 </a>
               </li>
             </ul>
 
-            <ul class="list list__row mobile-menu-socials">
-              <li class="mobile-menu-socials__list">
+            <ul class="list social-network mobile-menu-socials">
+              <li class="social-network__item mobile-menu-socials__item">
                 <a
-                  class="link mobile-menu-socials__link mobile-menu-socials__link--instagram"
                   href=""
-                  >Instagram</a
+                  class="social-network__link"
+                  aria-label="Instagram"
+                  rel="noopener nofollow noreferrer"
                 >
+                  <svg class="social-network__icon">
+                    <use href="./images/icons/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="mobile-menu-socials__list">
-                <a class="link mobile-menu-socials__link" href="">Twitter</a>
-              </li>
-              <li class="mobile-menu-socials__list">
-                <a class="link mobile-menu-socials__link" href="">Facebook</a>
-              </li>
-              <li class="mobile-menu-socials__list">
+              <li class="social-network__item mobile-menu-socials__item">
                 <a
-                  class="link mobile-menu-socials__link mobile-menu-socials__link--linkedin"
                   href=""
-                  >LinkedIn</a
+                  class="social-network__link"
+                  aria-label="Twitter"
+                  rel="noopener nofollow noreferrer"
                 >
+                  <svg class="social-network__icon">
+                    <use href="./images/icons/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-network__item mobile-menu-socials__item">
+                <a
+                  href=""
+                  class="social-network__link"
+                  aria-label="Facebook"
+                  rel="noopener nofollow noreferrer"
+                >
+                  <svg class="social-network__icon">
+                    <use href="./images/icons/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-network__item mobile-menu-socials__item">
+                <a
+                  href=""
+                  class="social-network__link"
+                  aria-label="LinkedIn"
+                  rel="noopener nofollow noreferrer"
+                >
+                  <svg class="social-network__icon">
+                    <use href="./images/icons/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
           </div>
@@ -110,25 +140,25 @@
     <main>
       <section class="section">
         <div class="container">
-          <h1 class="visually-hidden">Портфолио наших работ</h1>
+          <h1 class="visually-hidden">Portfolio of our works</h1>
 
           <ul class="list list__row portfolio-nav">
             <li class="portfolio-nav__item">
               <button type="button" class="portfolio-nav__btn portfolio-nav__btn--active">
-                Все
+                All
               </button>
             </li>
             <li class="portfolio-nav__item">
-              <button type="button" class="portfolio-nav__btn">Веб-сайты</button>
+              <button type="button" class="portfolio-nav__btn">Web Site</button>
             </li>
             <li class="portfolio-nav__item">
-              <button type="button" class="portfolio-nav__btn">Приложения</button>
+              <button type="button" class="portfolio-nav__btn">App</button>
             </li>
             <li class="portfolio-nav__item">
-              <button type="button" class="portfolio-nav__btn">Дизайн</button>
+              <button type="button" class="portfolio-nav__btn">Design</button>
             </li>
             <li class="portfolio-nav__item">
-              <button type="button" class="portfolio-nav__btn">Маркетинг</button>
+              <button type="button" class="portfolio-nav__btn">Marketing</button>
             </li>
           </ul>
 
@@ -139,43 +169,42 @@
                   <picture>
                     <source
                       srcset="
-                        ./images/portfolio/technocrack-website-desktop.jpg     370w,
-                        ./images/portfolio/technocrack-website-desktop-@2x.jpg 740w
+                        ./images/portfolio/online-courses-website-desktop.jpg     370w,
+                        ./images/portfolio/online-courses-website-desktop-@2x.jpg 740w
                       "
                       media="(min-width: 1200px)"
                     />
                     <source
                       srcset="
-                        ./images/portfolio/technocrack-website-tablet.jpg     354w,
-                        ./images/portfolio/technocrack-website-tablet-@2x.jpg 708w
+                        ./images/portfolio/online-courses-website-tablet.jpg     354w,
+                        ./images/portfolio/online-courses-website-tablet-@2x.jpg 708w
                       "
                       media="(min-width: 768px)"
                     />
                     <source
                       srcset="
-                        ./images/portfolio/technocrack-website-mobile.jpg     450w,
-                        ./images/portfolio/technocrack-website-mobile-@2x.jpg 900w
+                        ./images/portfolio/online-courses-website-mobile.jpg     450w,
+                        ./images/portfolio/online-courses-website-mobile-@2x.jpg 900w
                       "
                       media="(max-width: 768px)"
                     />
 
                     <img
-                      src="./images/portfolio/technocrack-website-mobile.jpg"
-                      alt="Веб-сайт Технокряк на ноутбуке"
+                      src="./images/portfolio/online-courses-website-mobile.jpg"
+                      alt="Online Courses website on laptop"
                       loading="lazy"
                     />
                   </picture>
                   <div class="portfolio-card__overlay">
                     <p class="portfolio-card__descr">
-                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
-                      компании или частном лице.
+                      14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
+                      Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App.
                     </p>
                   </div>
                 </div>
-                <div class="portfolio-card__thumb portfolio-card__thumb--technocrack">
-                  <h3 class="portfolio-card__title">Технокряк</h3>
-                  <p class="portfolio-card__text">Веб-сайт</p>
+                <div class="portfolio-card__thumb portfolio-card__thumb--bigger">
+                  <h3 class="portfolio-card__title">Online Courses</h3>
+                  <p class="portfolio-card__text">Web Site</p>
                 </div>
               </a>
             </li>
@@ -207,21 +236,20 @@
 
                     <img
                       src="./images/portfolio/poster-new-orleans-vs-golden-star-design-mobile.jpg"
-                      alt="Веб-сайт Технокряк на ноутбуке"
+                      alt="Poster New Orlean vs Golden Star"
                       loading="lazy"
                     />
                   </picture>
                   <div class="portfolio-card__overlay">
                     <p class="portfolio-card__descr">
-                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
-                      компании или частном лице.
+                      14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
+                      Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App.
                     </p>
                   </div>
                 </div>
                 <div class="portfolio-card__thumb">
-                  <h3 class="portfolio-card__title">Постер New Orlean vs Golden Star</h3>
-                  <p class="portfolio-card__text">Дизайн</p>
+                  <h3 class="portfolio-card__title">Poster New Orlean vs Golden Star</h3>
+                  <p class="portfolio-card__text">Design</p>
                 </div>
               </a>
             </li>
@@ -253,21 +281,20 @@
 
                     <img
                       src="./images/portfolio/restaurant-seafood-app-mobile.jpg"
-                      alt="Веб-сайт Технокряк на ноутбуке"
+                      alt="Seafood Restaurant logo"
                       loading="lazy"
                     />
                   </picture>
                   <div class="portfolio-card__overlay">
                     <p class="portfolio-card__descr">
-                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
-                      компании или частном лице.
+                      14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
+                      Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App.
                     </p>
                   </div>
                 </div>
                 <div class="portfolio-card__thumb">
-                  <h3 class="portfolio-card__title">Ресторан Seafood</h3>
-                  <p class="portfolio-card__text">Приложение</p>
+                  <h3 class="portfolio-card__title">Seafood Restaurant</h3>
+                  <p class="portfolio-card__text">App</p>
                 </div>
               </a>
             </li>
@@ -277,43 +304,42 @@
                   <picture>
                     <source
                       srcset="
-                        ./images/portfolio/project-prime-marketing-desktop.jpg     370w,
-                        ./images/portfolio/project-prime-marketing-desktop-@2x.jpg 740w
+                        ./images/portfolio/meditation-app-desktop.jpg     370w,
+                        ./images/portfolio/meditation-app-desktop-@2x.jpg 740w
                       "
                       media="(min-width: 1200px)"
                     />
                     <source
                       srcset="
-                        ./images/portfolio/project-prime-marketing-tablet.jpg     354w,
-                        ./images/portfolio/project-prime-marketing-tablet-@2x.jpg 708w
+                        ./images/portfolio/meditation-app-tablet.jpg     354w,
+                        ./images/portfolio/meditation-app-tablet-@2x.jpg 708w
                       "
                       media="(min-width: 768px)"
                     />
                     <source
                       srcset="
-                        ./images/portfolio/project-prime-marketing-mobile.jpg     450w,
-                        ./images/portfolio/project-prime-marketing-mobile-@2x.jpg 900w
+                        ./images/portfolio/meditation-app-mobile.jpg     450w,
+                        ./images/portfolio/meditation-app-mobile-@2x.jpg 900w
                       "
                       media="(max-width: 768px)"
                     />
 
                     <img
-                      src="./images/portfolio/project-prime-marketing-mobile.jpg"
-                      alt="Веб-сайт Технокряк на ноутбуке"
+                      src="./images/portfolio/meditation-app-mobile.jpg"
+                      alt="Headphones"
                       loading="lazy"
                     />
                   </picture>
                   <div class="portfolio-card__overlay">
                     <p class="portfolio-card__descr">
-                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
-                      компании или частном лице.
+                      14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
+                      Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App.
                     </p>
                   </div>
                 </div>
                 <div class="portfolio-card__thumb">
-                  <h3 class="portfolio-card__title">Проект Prime</h3>
-                  <p class="portfolio-card__text">Маркетинг</p>
+                  <h3 class="portfolio-card__title">Meditation App</h3>
+                  <p class="portfolio-card__text">App</p>
                 </div>
               </a>
             </li>
@@ -323,43 +349,42 @@
                   <picture>
                     <source
                       srcset="
-                        ./images/portfolio/project-boxes-app-desktop.jpg     370w,
-                        ./images/portfolio/project-boxes-app-desktop-@2x.jpg 740w
+                        ./images/portfolio/project-boxes-marketing-desktop.jpg     370w,
+                        ./images/portfolio/project-boxes-marketing-desktop-@2x.jpg 740w
                       "
                       media="(min-width: 1200px)"
                     />
                     <source
                       srcset="
-                        ./images/portfolio/project-boxes-app-tablet.jpg     354w,
-                        ./images/portfolio/project-boxes-app-tablet-@2x.jpg 708w
+                        ./images/portfolio/project-boxes-marketing-tablet.jpg     354w,
+                        ./images/portfolio/project-boxes-marketing-tablet-@2x.jpg 708w
                       "
                       media="(min-width: 768px)"
                     />
                     <source
                       srcset="
-                        ./images/portfolio/project-boxes-app-mobile.jpg     450w,
-                        ./images/portfolio/project-boxes-app-mobile-@2x.jpg 900w
+                        ./images/portfolio/project-boxes-marketing-mobile.jpg     450w,
+                        ./images/portfolio/project-boxes-marketing-mobile-@2x.jpg 900w
                       "
                       media="(max-width: 768px)"
                     />
 
                     <img
-                      src="./images/portfolio/project-boxes-app-mobile.jpg"
-                      alt="Веб-сайт Технокряк на ноутбуке"
+                      src="./images/portfolio/project-boxes-marketing-mobile.jpg"
+                      alt="Project Boxes logo"
                       loading="lazy"
                     />
                   </picture>
                   <div class="portfolio-card__overlay">
                     <p class="portfolio-card__descr">
-                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
-                      компании или частном лице.
+                      14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
+                      Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App.
                     </p>
                   </div>
                 </div>
                 <div class="portfolio-card__thumb">
-                  <h3 class="portfolio-card__title">Проект Boxes</h3>
-                  <p class="portfolio-card__text">Приложение</p>
+                  <h3 class="portfolio-card__title">Project Boxes</h3>
+                  <p class="portfolio-card__text">Marketing</p>
                 </div>
               </a>
             </li>
@@ -391,21 +416,20 @@
 
                     <img
                       src="./images/portfolio/inspiration-has-no-borders-website-mobile.jpg"
-                      alt="Веб-сайт Технокряк на ноутбуке"
+                      alt="Inspiration has no Borders on monitor"
                       loading="lazy"
                     />
                   </picture>
                   <div class="portfolio-card__overlay">
                     <p class="portfolio-card__descr">
-                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
-                      компании или частном лице.
+                      14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
+                      Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App.
                     </p>
                   </div>
                 </div>
                 <div class="portfolio-card__thumb">
                   <h3 class="portfolio-card__title">Inspiration has no Borders</h3>
-                  <p class="portfolio-card__text">Веб-сайт</p>
+                  <p class="portfolio-card__text">Web Site</p>
                 </div>
               </a>
             </li>
@@ -437,21 +461,20 @@
 
                     <img
                       src="./images/portfolio/limited-edition-design-mobile.jpg"
-                      alt="Веб-сайт Технокряк на ноутбуке"
+                      alt="Limited Edition on the table"
                       loading="lazy"
                     />
                   </picture>
                   <div class="portfolio-card__overlay">
                     <p class="portfolio-card__descr">
-                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
-                      компании или частном лице.
+                      14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
+                      Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App.
                     </p>
                   </div>
                 </div>
                 <div class="portfolio-card__thumb">
-                  <h3 class="portfolio-card__title">Издание Limited Edition</h3>
-                  <p class="portfolio-card__text">Дизайн</p>
+                  <h3 class="portfolio-card__title">Limited Edition</h3>
+                  <p class="portfolio-card__text">Design</p>
                 </div>
               </a>
             </li>
@@ -483,21 +506,20 @@
 
                     <img
                       src="./images/portfolio/project-lab-marketing-mobile.jpg"
-                      alt="Веб-сайт Технокряк на ноутбуке"
+                      alt="Project LAB logo"
                       loading="lazy"
                     />
                   </picture>
                   <div class="portfolio-card__overlay">
                     <p class="portfolio-card__descr">
-                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
-                      компании или частном лице.
+                      14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
+                      Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App.
                     </p>
                   </div>
                 </div>
                 <div class="portfolio-card__thumb">
-                  <h3 class="portfolio-card__title">Проект LAB</h3>
-                  <p class="portfolio-card__text">Маркетинг</p>
+                  <h3 class="portfolio-card__title">Project LAB</h3>
+                  <p class="portfolio-card__text">Marketing</p>
                 </div>
               </a>
             </li>
@@ -529,21 +551,20 @@
 
                     <img
                       src="./images/portfolio/growing-business-app-mobile.jpg"
-                      alt="Веб-сайт Технокряк на ноутбуке"
+                      alt="Growing Business app on laptop"
                       loading="lazy"
                     />
                   </picture>
                   <div class="portfolio-card__overlay">
                     <p class="portfolio-card__descr">
-                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
-                      компании или частном лице.
+                      14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
+                      Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App.
                     </p>
                   </div>
                 </div>
                 <div class="portfolio-card__thumb">
                   <h3 class="portfolio-card__title">Growing Business</h3>
-                  <p class="portfolio-card__text">Приложение</p>
+                  <p class="portfolio-card__text">App</p>
                 </div>
               </a>
             </li>
@@ -559,54 +580,72 @@
           <a class="logo footer__logo" href="./index.html">
             Web<span class="footer__logo-studio">Studio</span>
           </a>
-          <address>
+          <address class="footer__address">
             <ul class="list">
               <li class="footer-contacts__list">
                 <a
                   class="link footer-contacts__office"
-                  href="https://goo.gl/maps/piqngm7oDQpEDh6u6"
+                  href="https://maps.app.goo.gl/41XRg1hFxTCUJtQo8"
                   target="_blank"
                   rel="noopener nofollow noreferrer"
-                  >г. Киев, пр-т Леси Украинки, 26</a
+                  >New York City, United States</a
                 >
               </li>
               <li class="footer-contacts__list">
-                <a class="link footer-contacts__link" href="mailto:info@example.com"
-                  >info@example.com</a
+                <a class="link footer-contacts__link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
                 >
               </li>
               <li class="footer-contacts__list">
-                <a class="link footer-contacts__link" href="tel:+380991111111">+38 099 111 11 11</a>
+                <a class="link footer-contacts__link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
               </li>
             </ul>
           </address>
         </div>
         <div class="footer__socials">
-          <b class="footer__title">присоединяйтесь</b>
-          <ul class="list social-network">
+          <b class="footer__title">Social media</b>
+          <ul class="list social-network social-network__list list__set">
             <li class="social-network__item">
-              <a class="social-network__link" href="" aria-label="Instagram"
+              <a
+                class="social-network__link"
+                href=""
+                aria-label="Instagram"
+                rel="noopener nofollow noreferrer"
                 ><svg class="social-network__icon">
                   <use href="./images/icons/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="social-network__item">
-              <a class="social-network__link" href="" aria-label="Twitter"
+              <a
+                class="social-network__link"
+                href=""
+                aria-label="Twitter"
+                rel="noopener nofollow noreferrer"
                 ><svg class="social-network__icon">
                   <use href="./images/icons/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li class="social-network__item">
-              <a class="social-network__link" href="" aria-label="Facebook"
+              <a
+                class="social-network__link"
+                href=""
+                aria-label="Facebook"
+                rel="noopener nofollow noreferrer"
                 ><svg class="social-network__icon">
                   <use href="./images/icons/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="social-network__item">
-              <a class="social-network__link" href="" aria-label="LinkedIn"
+              <a
+                class="social-network__link"
+                href=""
+                aria-label="LinkedIn"
+                rel="noopener nofollow noreferrer"
                 ><svg class="social-network__icon">
                   <use href="./images/icons/icons.svg#icon-linkedin"></use>
                 </svg>
@@ -615,15 +654,19 @@
           </ul>
         </div>
 
+        <!-- js-speaker-form -->
+
         <form class="subscribe">
-          <b class="footer__title">Подпишитесь на рассылку</b>
-          <input class="subscribe__input" type="email" name="mail" placeholder="E-mail" />
-          <button class="subscribe__button" type="submit">
-            <span class="subscribe__button-text">Подписаться</span>
-            <svg class="subscribe__button-icon">
-              <use href="./images/icons/icons.svg#icon-send"></use>
-            </svg>
-          </button>
+          <b class="footer__title">Subscribe</b>
+          <div class="subscribe__wrapper">
+            <input class="subscribe__input" type="email" name="mail" placeholder="E-mail" />
+            <button class="subscribe__button" type="submit">
+              <span class="subscribe__button-text">Subscribe</span>
+              <svg class="subscribe__button-icon">
+                <use href="./images/icons/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </div>
         </form>
       </div>
     </footer>

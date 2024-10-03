@@ -27,6 +27,13 @@
 
 .footer-contacts__office {
   color: var(--primary-white-color);
+
+  transition: color var(--animate-time-function);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .footer-contacts__link {

@@ -995,8 +995,16 @@ textarea {
     font-size: 12px;
   }
 }
+@media screen and (min-width: 768px) {
+  .contact-form__policy {
+    padding-left: 25px;
+    text-align: left;
+    font-size: 12px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .contact-form__policy {
+    padding-left: 35px;
     font-size: inherit;
     line-height: inherit;
   }
@@ -1287,6 +1295,11 @@ textarea {
 
 .footer-contacts__office {
   color: var(--primary-white-color);
+  -webkit-transition: color var(--animate-time-function);
+  transition: color var(--animate-time-function);
+}
+.footer-contacts__office:hover, .footer-contacts__office:focus {
+  color: var(--accent-color);
 }
 
 .footer-contacts__link {
@@ -1443,7 +1456,7 @@ textarea {
   border-left: 1px solid var(--border-portfolio-card);
 }
 @media (min-width: 768px) and (max-width: 1199px) {
-  .portfolio-card__thumb--technocrack {
+  .portfolio-card__thumb--bigger {
     padding-top: 20px;
     padding-bottom: 56px;
   }
