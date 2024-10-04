@@ -1,27 +1,21 @@
-/* Класс для обнуления базовых свойств у списков (ul) */
 .list {
-    list-style: none;
-    padding-left: 0;
-    margin: 0;
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
 }
-
 
 .list__set {
-
-
-    @media screen and (min-width: 768px) {
-        display: flex;
-        flex-wrap: wrap;
-    }
-}
-
-
-.list__gallery {
-    @include gallery-one-mobile-two-tablet-four-screen;
-}
-
-
-.list__row {
+  @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
+  }
+}
+
+.list__gallery {
+  @include gallery-one-mobile-two-tablet-four-screen;
+}
+
+.list__row {
+  display: flex;
+  flex-wrap: wrap;
 }

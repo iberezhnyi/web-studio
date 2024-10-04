@@ -1,20 +1,3 @@
-@charset "UTF-8";
-/* Основной цвет бекграунда - #e5e5e5; */
-/* Дополнительный цвет бекграунда - #f5f4fa; */
-/* Цвет бекграунда героя, футера - #2f303a; */
-/* Дополнительный цвет бг, текста - #ffffff; */
-/* Цвет основного текста - #757575; */
-/* Цвет текста тайтлов - #212121; */
-/* Акцент цвет текста - #2196f3; */
-/* Цвет текста в футере № тел., e-mail - rgba(255, 255, 255, 0.6); */
-/* Лого студио текст цвет - #000000; */
-/* Цвет ховера кнопки - #188ce8; */
-/* Цвет border карточек портфолио -#eeeeee; */
-/* Цвет border хедера - #ececec; */
-/* Цвет бекграунда героя - #c4c4c4; */
-/* Цвет иконок соцсетей - #afb1b8; */
-/* Цвет бекграунда иконок соцсетей футера - rgba(255, 255, 255, 0.1); */
-/* Цвет бекграунда thumb working process - rgba(47, 48, 58, 0.8); */
 :root {
   --primary-white-color: #ffffff;
   --section-bg-color: #e5e5e5;
@@ -404,7 +387,6 @@ summary {
   display: list-item;
 }
 
-/* Reset */
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -417,7 +399,6 @@ html {
           box-sizing: inherit;
 }
 
-/* Стили для обнуления верхних отступов у элементов */
 h1,
 h2,
 h3,
@@ -428,24 +409,20 @@ p {
   margin-top: 0;
 }
 
-/* Свойства для корректного отображения картинок */
 img {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
-/* Свойства для обнуления курсива у address */
 address {
   font-style: normal;
 }
 
-/* Свойства для запрета изменения размера поля ввода текса в форме */
 textarea {
   resize: none;
 }
 
-/* Base */
 .page {
   background-color: var(--primary-white-color);
   color: var(--primary-text-color);
@@ -469,7 +446,6 @@ textarea {
   overflow: hidden;
 }
 
-/* Класс для обнуления базовых свойств у ссылок */
 .link {
   text-decoration: none;
   color: inherit;
@@ -528,7 +504,6 @@ textarea {
   color: var(--title-text-color);
 }
 
-/* Класс для обнуления базовых свойств у списков (ul) */
 .list {
   list-style: none;
   padding-left: 0;

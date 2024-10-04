@@ -1,32 +1,28 @@
-@mixin custom-flex ($display: flex, $justify-content: center, $align-items: center) {
-    display: $display;
-    justify-content: $justify-content;
-    align-items: $align-items;
+@mixin custom-flex($display: flex, $justify-content: center, $align-items: center) {
+  display: $display;
+  justify-content: $justify-content;
+  align-items: $align-items;
 }
 
-
-// Галереї (Тільки для повністю заповнених рядків)
+// Galleries (Only for fully filled rows)
 @mixin gallery-one-mobile-two-tablet-four-screen {
-    @extend %zero-tablet-last-elem-not-marg-bott;
-    @extend %tablet-screen-last-two-elem-not-marg-bott-odd-marg-right;
-    @extend %screen-max-last-four-elem-not-marg-bott-fourth-marg-right;
+  @extend %zero-tablet-last-elem-not-marg-bott;
+  @extend %tablet-screen-last-two-elem-not-marg-bott-odd-marg-right;
+  @extend %screen-max-last-four-elem-not-marg-bott-fourth-marg-right;
 }
-
 
 @mixin gallery-one-mobile-two-tablet-three-screen {
-    @extend %zero-tablet-last-elem-not-marg-bott;
-    @extend %tablet-screen-last-two-elem-not-marg-bott-odd-marg-right;
-    @extend %screen-max-last-three-elem-not-marg-bott-third-marg-right;
+  @extend %zero-tablet-last-elem-not-marg-bott;
+  @extend %tablet-screen-last-two-elem-not-marg-bott-odd-marg-right;
+  @extend %screen-max-last-three-elem-not-marg-bott-third-marg-right;
 }
-
 
 @mixin gallery-two-mobile-three-tablet-six-screen {
-    @extend %zero-tablet-last-two-elem-not-marg-bott-odd-marg-right;
-    @extend %tablet-screen-last-three-elem-not-marg-bott-third-marg-right;
-    @extend %screen-max-last-six-elem-not-marg-bott-sixth-marg-right;
+  @extend %zero-tablet-last-two-elem-not-marg-bott-odd-marg-right;
+  @extend %tablet-screen-last-three-elem-not-marg-bott-third-marg-right;
+  @extend %screen-max-last-six-elem-not-marg-bott-sixth-marg-right;
 }
 
-
 @mixin gallery-three-screen {
-    @extend %screen-max-last-three-elem-not-marg-bott-third-marg-right;
+  @extend %screen-max-last-three-elem-not-marg-bott-third-marg-right;
 }

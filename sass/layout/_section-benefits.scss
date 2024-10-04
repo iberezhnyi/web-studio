@@ -1,20 +1,4 @@
-// .benefits {
-
-
-//     @media (min-width: 768px) and (max-width: 1199px) {
-//       width: 354px;
-
-//     }
-
-//     @media screen and (min-width: 1200px) {
-//       width: 270px;
-//     }
-// }
-
-// ПЕРЕВІРИТИ
-
 .benefits__thumb {
-
   @include custom-flex;
 
   margin-bottom: 30px;
@@ -24,24 +8,20 @@
   border-radius: 4px;
 }
 
-
 .benefits__icon {
   width: 70px;
   height: 70px;
 }
-
 
 .benefits__title {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
 
-
   @media screen and (max-width: 767px) {
-      text-align: center;
-    }
+    text-align: center;
+  }
 }
-
 
 .benefits__descr {
   margin: 0;
